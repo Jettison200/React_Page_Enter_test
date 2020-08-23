@@ -1,0 +1,44 @@
+@import 'utilities';
+
+header{
+    height: calc(100vh - 80px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-container{
+    @include container;
+    align-items: center;
+    height: 100%;
+}
+.header-text{
+    width: 600px;
+
+}
+
+.header-greeting{
+    font-size: 60px;
+    .sub-greeting{
+        display: block;
+        font-size: 40px;
+        margin-top: 30px;
+       
+    }
+    .bold{
+        color: dodgerblue;
+    }
+}
+
+@media only screen and (max-width: 500px){
+  
+.header-greeting{
+    font-size: 40px;
+    .sub-greeting{
+        font-size: 20px;
+  }
+}
+}
